@@ -1,0 +1,3174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1b3f80e30d8680f18147430fdb03ec4e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1b3f80e30d8680f18147430fdb03ec4e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1b3f80e30d8680f18147430fdb03ec4e = L.map(
+                "map_1b3f80e30d8680f18147430fdb03ec4e",
+                {
+                    center: [12.9716, 77.6946],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_22fe717b9dd18b5e5ff3db6dd54c73dc = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_22fe717b9dd18b5e5ff3db6dd54c73dc.addTo(map_1b3f80e30d8680f18147430fdb03ec4e);
+        
+    
+            var marker_54298ae5f5160f2a7588e0ddb4059afa = L.marker(
+                [12.962537, 77.600343],
+                {
+}
+            ).addTo(map_1b3f80e30d8680f18147430fdb03ec4e);
+        
+    
+            var icon_e09fdc1224456f7ac31932a8881378e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac68285d1bfe08bf388db4a028452eb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_81d902526438e4e3cf3e4741a1293179 = $(`<div id="html_81d902526438e4e3cf3e4741a1293179" style="width: 100.0%; height: 100.0%;"><b>Divyasree</b></div>`)[0];
+                popup_ac68285d1bfe08bf388db4a028452eb4.setContent(html_81d902526438e4e3cf3e4741a1293179);
+            
+        
+
+        marker_54298ae5f5160f2a7588e0ddb4059afa.bindPopup(popup_ac68285d1bfe08bf388db4a028452eb4)
+        ;
+
+        
+    
+    
+            marker_54298ae5f5160f2a7588e0ddb4059afa.bindTooltip(
+                `<div>
+                     Divyasree
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54298ae5f5160f2a7588e0ddb4059afa.setIcon(icon_e09fdc1224456f7ac31932a8881378e5);
+            
+    
+            var circle_cf46c9381fab21565d2dd1b82c4b508f = L.circle(
+                [12.962537, 77.600343],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_1b3f80e30d8680f18147430fdb03ec4e);
+        
+    
+        var popup_1748ca32a3bd9d81f9735852226cf426 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8ba7dcade15640c13c43eb296d392a8 = $(`<div id="html_c8ba7dcade15640c13c43eb296d392a8" style="width: 100.0%; height: 100.0%;">Divyasree Area</div>`)[0];
+                popup_1748ca32a3bd9d81f9735852226cf426.setContent(html_c8ba7dcade15640c13c43eb296d392a8);
+            
+        
+
+        circle_cf46c9381fab21565d2dd1b82c4b508f.bindPopup(popup_1748ca32a3bd9d81f9735852226cf426)
+        ;
+
+        
+    
+    
+            var marker_0814b4f5e90d5cb5ae081e152d09e141 = L.marker(
+                [13.052477, 77.594383],
+                {
+}
+            ).addTo(map_1b3f80e30d8680f18147430fdb03ec4e);
+        
+    
+            var icon_b130791afb63826fe2bfa27b40a81d7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1b95ffcd0a36efa3de11ba4a60bf6e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e2f24febe855635ab163bb5b4023829 = $(`<div id="html_9e2f24febe855635ab163bb5b4023829" style="width: 100.0%; height: 100.0%;"><b>Umiya City</b></div>`)[0];
+                popup_c1b95ffcd0a36efa3de11ba4a60bf6e3.setContent(html_9e2f24febe855635ab163bb5b4023829);
+            
+        
+
+        marker_0814b4f5e90d5cb5ae081e152d09e141.bindPopup(popup_c1b95ffcd0a36efa3de11ba4a60bf6e3)
+        ;
+
+        
+    
+    
+            marker_0814b4f5e90d5cb5ae081e152d09e141.bindTooltip(
+                `<div>
+                     Umiya City
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0814b4f5e90d5cb5ae081e152d09e141.setIcon(icon_b130791afb63826fe2bfa27b40a81d7f);
+            
+    
+            var circle_f7a1e40530fb6a1637b9ca0abc12fbae = L.circle(
+                [13.052477, 77.594383],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_1b3f80e30d8680f18147430fdb03ec4e);
+        
+    
+        var popup_057b9163757b25ae29ca29c746477ad1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e6d50b101824cbbc747a48dbf913982 = $(`<div id="html_6e6d50b101824cbbc747a48dbf913982" style="width: 100.0%; height: 100.0%;">Umiya City Area</div>`)[0];
+                popup_057b9163757b25ae29ca29c746477ad1.setContent(html_6e6d50b101824cbbc747a48dbf913982);
+            
+        
+
+        circle_f7a1e40530fb6a1637b9ca0abc12fbae.bindPopup(popup_057b9163757b25ae29ca29c746477ad1)
+        ;
+
+        
+    
+    
+            var marker_a57300000823ec5029d1ad056717b17f = L.marker(
+                [12.970818, 77.749787],
+                {
+}
+            ).addTo(map_1b3f80e30d8680f18147430fdb03ec4e);
+        
+    
+            var icon_29478777bd7116f5d8bb83228346640e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_001eac34439e2f6b25195f70be7e830e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d579fe3ac9ebfadef6160bd5dc14a15a = $(`<div id="html_d579fe3ac9ebfadef6160bd5dc14a15a" style="width: 100.0%; height: 100.0%;"><b>White Field</b></div>`)[0];
+                popup_001eac34439e2f6b25195f70be7e830e.setContent(html_d579fe3ac9ebfadef6160bd5dc14a15a);
+            
+        
+
+        marker_a57300000823ec5029d1ad056717b17f.bindPopup(popup_001eac34439e2f6b25195f70be7e830e)
+        ;
+
+        
+    
+    
+            marker_a57300000823ec5029d1ad056717b17f.bindTooltip(
+                `<div>
+                     White Field
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a57300000823ec5029d1ad056717b17f.setIcon(icon_29478777bd7116f5d8bb83228346640e);
+            
+    
+            var circle_890d7824e079b49d5a0d72c7a7373901 = L.circle(
+                [12.970818, 77.749787],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_1b3f80e30d8680f18147430fdb03ec4e);
+        
+    
+        var popup_40280c328f442ea30f753b647a2ba39a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_49b45b01a3eced512b516a178b853d7c = $(`<div id="html_49b45b01a3eced512b516a178b853d7c" style="width: 100.0%; height: 100.0%;">White Field Area</div>`)[0];
+                popup_40280c328f442ea30f753b647a2ba39a.setContent(html_49b45b01a3eced512b516a178b853d7c);
+            
+        
+
+        circle_890d7824e079b49d5a0d72c7a7373901.bindPopup(popup_40280c328f442ea30f753b647a2ba39a)
+        ;
+
+        
+    
+    
+            var feature_group_418492677c71c8b51016ab0c24c56662 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_9e34a3b2874a5a94bc821c994665fb6c = L.circleMarker(
+                [12.8986856, 77.63657871843411],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.0, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_0ba5746c96c4b09f5ef9fba3266e7fc0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40406567184aa7c71ea3efe89d8f19bb = $(`<div id="html_40406567184aa7c71ea3efe89d8f19bb" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560068<br><b>Count:</b> 23<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_0ba5746c96c4b09f5ef9fba3266e7fc0.setContent(html_40406567184aa7c71ea3efe89d8f19bb);
+            
+        
+
+        circle_marker_9e34a3b2874a5a94bc821c994665fb6c.bindPopup(popup_0ba5746c96c4b09f5ef9fba3266e7fc0)
+        ;
+
+        
+    
+    
+            circle_marker_9e34a3b2874a5a94bc821c994665fb6c.bindTooltip(
+                `<div>
+                     Pincode: 560068
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7e640c1edc16552768cfab052b8362c0 = L.circleMarker(
+                [12.8826231, 77.6040474819001],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.173913043478258, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_29275f6670927a96ed49bcbbc7bf52ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58a9ffd6abcf4e592728464a521abb76 = $(`<div id="html_58a9ffd6abcf4e592728464a521abb76" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560076<br><b>Count:</b> 17<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_29275f6670927a96ed49bcbbc7bf52ce.setContent(html_58a9ffd6abcf4e592728464a521abb76);
+            
+        
+
+        circle_marker_7e640c1edc16552768cfab052b8362c0.bindPopup(popup_29275f6670927a96ed49bcbbc7bf52ce)
+        ;
+
+        
+    
+    
+            circle_marker_7e640c1edc16552768cfab052b8362c0.bindTooltip(
+                `<div>
+                     Pincode: 560076
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4d8010c5c8e6a82c1ca20d490def48b2 = L.circleMarker(
+                [12.963021000000001, 77.60357145087298],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.869565217391305, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_7b98d2a911706cf1ebf74ebbf7b56419 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c07f70d1fe4d8ecb6d9728950aa89711 = $(`<div id="html_c07f70d1fe4d8ecb6d9728950aa89711" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560025<br><b>Count:</b> 16<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_7b98d2a911706cf1ebf74ebbf7b56419.setContent(html_c07f70d1fe4d8ecb6d9728950aa89711);
+            
+        
+
+        circle_marker_4d8010c5c8e6a82c1ca20d490def48b2.bindPopup(popup_7b98d2a911706cf1ebf74ebbf7b56419)
+        ;
+
+        
+    
+    
+            circle_marker_4d8010c5c8e6a82c1ca20d490def48b2.bindTooltip(
+                `<div>
+                     Pincode: 560025
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f06b95733f0084bfd8021d9c9baed4a = L.circleMarker(
+                [12.89688445, 77.58255091382298],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.956521739130434, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_20ed1ab7d19356e896ebb8268ebcaa89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b805e28686e3026973dba8087485c96a = $(`<div id="html_b805e28686e3026973dba8087485c96a" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560078<br><b>Count:</b> 13<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_20ed1ab7d19356e896ebb8268ebcaa89.setContent(html_b805e28686e3026973dba8087485c96a);
+            
+        
+
+        circle_marker_2f06b95733f0084bfd8021d9c9baed4a.bindPopup(popup_20ed1ab7d19356e896ebb8268ebcaa89)
+        ;
+
+        
+    
+    
+            circle_marker_2f06b95733f0084bfd8021d9c9baed4a.bindTooltip(
+                `<div>
+                     Pincode: 560078
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f3b30b359712b3b1277f4b55dd40cb5 = L.circleMarker(
+                [12.961163086021505, 77.58623299892473],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.652173913043478, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_b09df109e8cc0e5e608082f45e0e9409 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2dd6c3ad9ab272745582cc84aa5d3e7a = $(`<div id="html_2dd6c3ad9ab272745582cc84aa5d3e7a" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560027<br><b>Count:</b> 12<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_b09df109e8cc0e5e608082f45e0e9409.setContent(html_2dd6c3ad9ab272745582cc84aa5d3e7a);
+            
+        
+
+        circle_marker_2f3b30b359712b3b1277f4b55dd40cb5.bindPopup(popup_b09df109e8cc0e5e608082f45e0e9409)
+        ;
+
+        
+    
+    
+            circle_marker_2f3b30b359712b3b1277f4b55dd40cb5.bindTooltip(
+                `<div>
+                     Pincode: 560027
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8178ac69c23d59690d76a158a4febb59 = L.circleMarker(
+                [12.8502428, 77.6545244022015],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.347826086956522, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_ffe48d0e71ec9dc10ff32d1158c95932 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eddfc491bc63fae45529f060e29b4e9c = $(`<div id="html_eddfc491bc63fae45529f060e29b4e9c" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560100<br><b>Count:</b> 11<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_ffe48d0e71ec9dc10ff32d1158c95932.setContent(html_eddfc491bc63fae45529f060e29b4e9c);
+            
+        
+
+        circle_marker_8178ac69c23d59690d76a158a4febb59.bindPopup(popup_ffe48d0e71ec9dc10ff32d1158c95932)
+        ;
+
+        
+    
+    
+            circle_marker_8178ac69c23d59690d76a158a4febb59.bindTooltip(
+                `<div>
+                     Pincode: 560100
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_54d22f4a382dec241c2a7fb90c87cb37 = L.circleMarker(
+                [12.91437835, 77.64325647698988],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.043478260869565, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_e3cda13b5e4825538bafc38c2a675b9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e0f1cefceb148a4ca859a8357117987 = $(`<div id="html_0e0f1cefceb148a4ca859a8357117987" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560102<br><b>Count:</b> 10<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_e3cda13b5e4825538bafc38c2a675b9a.setContent(html_0e0f1cefceb148a4ca859a8357117987);
+            
+        
+
+        circle_marker_54d22f4a382dec241c2a7fb90c87cb37.bindPopup(popup_e3cda13b5e4825538bafc38c2a675b9a)
+        ;
+
+        
+    
+    
+            circle_marker_54d22f4a382dec241c2a7fb90c87cb37.bindTooltip(
+                `<div>
+                     Pincode: 560102
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0980b094ff665e12f9335c76593ba5b4 = L.circleMarker(
+                [12.9255706, 77.6343792992431],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.434782608695652, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_41a5679385773f473e064b2947d0d658 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_530308516b8619ab3996b4eef4083f4f = $(`<div id="html_530308516b8619ab3996b4eef4083f4f" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560034<br><b>Count:</b> 8<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_41a5679385773f473e064b2947d0d658.setContent(html_530308516b8619ab3996b4eef4083f4f);
+            
+        
+
+        circle_marker_0980b094ff665e12f9335c76593ba5b4.bindPopup(popup_41a5679385773f473e064b2947d0d658)
+        ;
+
+        
+    
+    
+            circle_marker_0980b094ff665e12f9335c76593ba5b4.bindTooltip(
+                `<div>
+                     Pincode: 560034
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_5774bcf423f77a37016c59d4101687ac = L.circleMarker(
+                [12.93047605, 77.54532588798457],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.130434782608695, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_6815cecb9b6fe8aa6beef1b1cd213a09 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1dbc98da8c575041461e05bb756e5bcd = $(`<div id="html_1dbc98da8c575041461e05bb756e5bcd" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560085<br><b>Count:</b> 7<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_6815cecb9b6fe8aa6beef1b1cd213a09.setContent(html_1dbc98da8c575041461e05bb756e5bcd);
+            
+        
+
+        circle_marker_5774bcf423f77a37016c59d4101687ac.bindPopup(popup_6815cecb9b6fe8aa6beef1b1cd213a09)
+        ;
+
+        
+    
+    
+            circle_marker_5774bcf423f77a37016c59d4101687ac.bindTooltip(
+                `<div>
+                     Pincode: 560085
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f27331de1aab10696ae5ca724c753f9b = L.circleMarker(
+                [12.954811150000001, 77.66063780143375],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.521739130434782, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_f9f83726df05a7c92ffb59d63ef492ba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_065e9771b0a2cb66ee6ce931094a52ad = $(`<div id="html_065e9771b0a2cb66ee6ce931094a52ad" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560017<br><b>Count:</b> 5<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_f9f83726df05a7c92ffb59d63ef492ba.setContent(html_065e9771b0a2cb66ee6ce931094a52ad);
+            
+        
+
+        circle_marker_f27331de1aab10696ae5ca724c753f9b.bindPopup(popup_f9f83726df05a7c92ffb59d63ef492ba)
+        ;
+
+        
+    
+    
+            circle_marker_f27331de1aab10696ae5ca724c753f9b.bindTooltip(
+                `<div>
+                     Pincode: 560017
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_51855d1d0de9d097645d7d0ad64e2111 = L.circleMarker(
+                [12.90416415, 77.53994904955654],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.521739130434782, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_08d1f9c642d0490d98ac76764cc6a012 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_548004c401a7e90433ac17eb35bc548e = $(`<div id="html_548004c401a7e90433ac17eb35bc548e" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560061<br><b>Count:</b> 5<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_08d1f9c642d0490d98ac76764cc6a012.setContent(html_548004c401a7e90433ac17eb35bc548e);
+            
+        
+
+        circle_marker_51855d1d0de9d097645d7d0ad64e2111.bindPopup(popup_08d1f9c642d0490d98ac76764cc6a012)
+        ;
+
+        
+    
+    
+            circle_marker_51855d1d0de9d097645d7d0ad64e2111.bindTooltip(
+                `<div>
+                     Pincode: 560061
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_61f7cbb1ad5250f2ef83062734689c76 = L.circleMarker(
+                [12.9170541, 77.67239628994199],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.217391304347826, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_a1ce0cf86dfa6324dcfc377e073b24fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b319a5b90670dc399f42b4c2af81f01 = $(`<div id="html_7b319a5b90670dc399f42b4c2af81f01" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560103<br><b>Count:</b> 4<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_a1ce0cf86dfa6324dcfc377e073b24fe.setContent(html_7b319a5b90670dc399f42b4c2af81f01);
+            
+        
+
+        circle_marker_61f7cbb1ad5250f2ef83062734689c76.bindPopup(popup_a1ce0cf86dfa6324dcfc377e073b24fe)
+        ;
+
+        
+    
+    
+            circle_marker_61f7cbb1ad5250f2ef83062734689c76.bindTooltip(
+                `<div>
+                     Pincode: 560103
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f729d5ac08e9b42d22d780233f2c6c72 = L.circleMarker(
+                [12.8151905, 77.57613577042719],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.217391304347826, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_0e00e09cb097a2cb61941d5356bbeaf9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f00da3cff71bd1ea11547ca72ec5d6b = $(`<div id="html_8f00da3cff71bd1ea11547ca72ec5d6b" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560083<br><b>Count:</b> 4<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_0e00e09cb097a2cb61941d5356bbeaf9.setContent(html_8f00da3cff71bd1ea11547ca72ec5d6b);
+            
+        
+
+        circle_marker_f729d5ac08e9b42d22d780233f2c6c72.bindPopup(popup_0e00e09cb097a2cb61941d5356bbeaf9)
+        ;
+
+        
+    
+    
+            circle_marker_f729d5ac08e9b42d22d780233f2c6c72.bindTooltip(
+                `<div>
+                     Pincode: 560083
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b369a4828db2a041d21d23d00414415 = L.circleMarker(
+                [12.9395967, 77.62083402182328],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.217391304347826, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_13e9d1d36e2c21a16d7a6d11079c1595 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3a57f973b5fb61e98792eaa778b4cb3 = $(`<div id="html_b3a57f973b5fb61e98792eaa778b4cb3" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560095<br><b>Count:</b> 4<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_13e9d1d36e2c21a16d7a6d11079c1595.setContent(html_b3a57f973b5fb61e98792eaa778b4cb3);
+            
+        
+
+        circle_marker_1b369a4828db2a041d21d23d00414415.bindPopup(popup_13e9d1d36e2c21a16d7a6d11079c1595)
+        ;
+
+        
+    
+    
+            circle_marker_1b369a4828db2a041d21d23d00414415.bindTooltip(
+                `<div>
+                     Pincode: 560095
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_59abf9e6f4bbc5bc1f78a4493b2f61f0 = L.circleMarker(
+                [12.964889249999999, 77.52918178546352],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.217391304347826, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_a4ac7c384042fdddd8a6f95f0dd87bf4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a064429de7ba0e76a33e81b0c1526c67 = $(`<div id="html_a064429de7ba0e76a33e81b0c1526c67" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560040<br><b>Count:</b> 4<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_a4ac7c384042fdddd8a6f95f0dd87bf4.setContent(html_a064429de7ba0e76a33e81b0c1526c67);
+            
+        
+
+        circle_marker_59abf9e6f4bbc5bc1f78a4493b2f61f0.bindPopup(popup_a4ac7c384042fdddd8a6f95f0dd87bf4)
+        ;
+
+        
+    
+    
+            circle_marker_59abf9e6f4bbc5bc1f78a4493b2f61f0.bindTooltip(
+                `<div>
+                     Pincode: 560040
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_328f1bfcc75d6bac08acf68da62a7467 = L.circleMarker(
+                [12.9709184, 77.6566485016657],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.217391304347826, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_8febe7fbd1d47302bfb31a3ca8982221 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_110f5ef410df395a8ddae58b4f05c201 = $(`<div id="html_110f5ef410df395a8ddae58b4f05c201" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560075<br><b>Count:</b> 4<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_8febe7fbd1d47302bfb31a3ca8982221.setContent(html_110f5ef410df395a8ddae58b4f05c201);
+            
+        
+
+        circle_marker_328f1bfcc75d6bac08acf68da62a7467.bindPopup(popup_8febe7fbd1d47302bfb31a3ca8982221)
+        ;
+
+        
+    
+    
+            circle_marker_328f1bfcc75d6bac08acf68da62a7467.bindTooltip(
+                `<div>
+                     Pincode: 560075
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6bc2ce1783713a407a9e08cf386e6c1 = L.circleMarker(
+                [12.980830000000001, 77.63928892484356],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_c8e02c6e3c335f1375b3efbf50937ca1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bea0e3462d6a76ca8591f5a8e947a097 = $(`<div id="html_bea0e3462d6a76ca8591f5a8e947a097" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560038<br><b>Count:</b> 3<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_c8e02c6e3c335f1375b3efbf50937ca1.setContent(html_bea0e3462d6a76ca8591f5a8e947a097);
+            
+        
+
+        circle_marker_b6bc2ce1783713a407a9e08cf386e6c1.bindPopup(popup_c8e02c6e3c335f1375b3efbf50937ca1)
+        ;
+
+        
+    
+    
+            circle_marker_b6bc2ce1783713a407a9e08cf386e6c1.bindTooltip(
+                `<div>
+                     Pincode: 560038
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fcc80ffeaf81c6b55116b39325d3f94d = L.circleMarker(
+                [12.930840499999999, 77.60747823600772],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_e409d58c08359dbf8ac267a905af599f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ff8554325d466b1b61315b5d64d8fb9a = $(`<div id="html_ff8554325d466b1b61315b5d64d8fb9a" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560029<br><b>Count:</b> 3<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_e409d58c08359dbf8ac267a905af599f.setContent(html_ff8554325d466b1b61315b5d64d8fb9a);
+            
+        
+
+        circle_marker_fcc80ffeaf81c6b55116b39325d3f94d.bindPopup(popup_e409d58c08359dbf8ac267a905af599f)
+        ;
+
+        
+    
+    
+            circle_marker_fcc80ffeaf81c6b55116b39325d3f94d.bindTooltip(
+                `<div>
+                     Pincode: 560029
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_de8a53dcc9d7e58989223ac0e48adefb = L.circleMarker(
+                [12.988884500000001, 77.53307554425419],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_e1fcabe4535c8afe766bde33b78d29fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5abd4a6d93403f1ac9f534cd70c2595e = $(`<div id="html_5abd4a6d93403f1ac9f534cd70c2595e" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560079<br><b>Count:</b> 3<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_e1fcabe4535c8afe766bde33b78d29fb.setContent(html_5abd4a6d93403f1ac9f534cd70c2595e);
+            
+        
+
+        circle_marker_de8a53dcc9d7e58989223ac0e48adefb.bindPopup(popup_e1fcabe4535c8afe766bde33b78d29fb)
+        ;
+
+        
+    
+    
+            circle_marker_de8a53dcc9d7e58989223ac0e48adefb.bindTooltip(
+                `<div>
+                     Pincode: 560079
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_715581859ab46ce13970b4e5fcab07e0 = L.circleMarker(
+                [12.977304199999999, 77.62653690444957],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_a38943c19d7534162de571a9470ce270 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8981ca365720fd10a1997092165816ae = $(`<div id="html_8981ca365720fd10a1997092165816ae" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560008<br><b>Count:</b> 3<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_a38943c19d7534162de571a9470ce270.setContent(html_8981ca365720fd10a1997092165816ae);
+            
+        
+
+        circle_marker_715581859ab46ce13970b4e5fcab07e0.bindPopup(popup_a38943c19d7534162de571a9470ce270)
+        ;
+
+        
+    
+    
+            circle_marker_715581859ab46ce13970b4e5fcab07e0.bindTooltip(
+                `<div>
+                     Pincode: 560008
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e092904565fcb626bf60033e9505dc78 = L.circleMarker(
+                [12.94546515, 77.60688693612659],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_aac81e5c03df4d2f07c645c6ba07eaca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e70f9f3179d899178b08ee3ce790322c = $(`<div id="html_e70f9f3179d899178b08ee3ce790322c" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560030<br><b>Count:</b> 3<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_aac81e5c03df4d2f07c645c6ba07eaca.setContent(html_e70f9f3179d899178b08ee3ce790322c);
+            
+        
+
+        circle_marker_e092904565fcb626bf60033e9505dc78.bindPopup(popup_aac81e5c03df4d2f07c645c6ba07eaca)
+        ;
+
+        
+    
+    
+            circle_marker_e092904565fcb626bf60033e9505dc78.bindTooltip(
+                `<div>
+                     Pincode: 560030
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7399a64bf23386ba16815e5889b5ab90 = L.circleMarker(
+                [12.994702199999999, 77.4849282381972],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_b2abfd145c3a5abeca887add6fad2ae9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dd0e41d594205e5ed340a78c62491cc7 = $(`<div id="html_dd0e41d594205e5ed340a78c62491cc7" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560091<br><b>Count:</b> 3<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_b2abfd145c3a5abeca887add6fad2ae9.setContent(html_dd0e41d594205e5ed340a78c62491cc7);
+            
+        
+
+        circle_marker_7399a64bf23386ba16815e5889b5ab90.bindPopup(popup_b2abfd145c3a5abeca887add6fad2ae9)
+        ;
+
+        
+    
+    
+            circle_marker_7399a64bf23386ba16815e5889b5ab90.bindTooltip(
+                `<div>
+                     Pincode: 560091
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_84adfc10d08167f1ec02786b45fd318c = L.circleMarker(
+                [12.9047713, 77.46690742236362],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_026b1c7810ad1d5993200ed5d9ba3370 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8207d57a7ea479eee3210add16fc04d3 = $(`<div id="html_8207d57a7ea479eee3210add16fc04d3" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560060<br><b>Count:</b> 2<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_026b1c7810ad1d5993200ed5d9ba3370.setContent(html_8207d57a7ea479eee3210add16fc04d3);
+            
+        
+
+        circle_marker_84adfc10d08167f1ec02786b45fd318c.bindPopup(popup_026b1c7810ad1d5993200ed5d9ba3370)
+        ;
+
+        
+    
+    
+            circle_marker_84adfc10d08167f1ec02786b45fd318c.bindTooltip(
+                `<div>
+                     Pincode: 560060
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ab642dde77b9aad1ca4a71f9a8ea64cc = L.circleMarker(
+                [13.00163455, 77.57342929615425],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_b998c23d740ac9863eb0aa48aca28b3a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44804a9ca978e5937afab05b5adffd2e = $(`<div id="html_44804a9ca978e5937afab05b5adffd2e" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560003<br><b>Count:</b> 2<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_b998c23d740ac9863eb0aa48aca28b3a.setContent(html_44804a9ca978e5937afab05b5adffd2e);
+            
+        
+
+        circle_marker_ab642dde77b9aad1ca4a71f9a8ea64cc.bindPopup(popup_b998c23d740ac9863eb0aa48aca28b3a)
+        ;
+
+        
+    
+    
+            circle_marker_ab642dde77b9aad1ca4a71f9a8ea64cc.bindTooltip(
+                `<div>
+                     Pincode: 560003
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ed2a361ab4251668a38418e5ca842338 = L.circleMarker(
+                [12.993058399999999, 77.56394833481826],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_a1de4a8a8b0b991620ca1787c8a18898 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b9ef98782604d5dbb3d5a605dde13ed = $(`<div id="html_0b9ef98782604d5dbb3d5a605dde13ed" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560021<br><b>Count:</b> 2<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_a1de4a8a8b0b991620ca1787c8a18898.setContent(html_0b9ef98782604d5dbb3d5a605dde13ed);
+            
+        
+
+        circle_marker_ed2a361ab4251668a38418e5ca842338.bindPopup(popup_a1de4a8a8b0b991620ca1787c8a18898)
+        ;
+
+        
+    
+    
+            circle_marker_ed2a361ab4251668a38418e5ca842338.bindTooltip(
+                `<div>
+                     Pincode: 560021
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_62c5410978ca3376fb07a6245094ebea = L.circleMarker(
+                [12.9650761, 77.50991306408667],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_afa75de01371cffc42d592b7f9c21936 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12ae4a336cc7bdfb74e2b959fcfc97a3 = $(`<div id="html_12ae4a336cc7bdfb74e2b959fcfc97a3" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560072<br><b>Count:</b> 2<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_afa75de01371cffc42d592b7f9c21936.setContent(html_12ae4a336cc7bdfb74e2b959fcfc97a3);
+            
+        
+
+        circle_marker_62c5410978ca3376fb07a6245094ebea.bindPopup(popup_afa75de01371cffc42d592b7f9c21936)
+        ;
+
+        
+    
+    
+            circle_marker_62c5410978ca3376fb07a6245094ebea.bindTooltip(
+                `<div>
+                     Pincode: 560072
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_02a962a66f34378b9927d35cc267fd40 = L.circleMarker(
+                [12.864806900000001, 77.49634910258361],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_1bca38f1d9274dec020c261d43b3ab3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62064126403c80120d8b7eefa0237671 = $(`<div id="html_62064126403c80120d8b7eefa0237671" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560062<br><b>Count:</b> 2<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_1bca38f1d9274dec020c261d43b3ab3c.setContent(html_62064126403c80120d8b7eefa0237671);
+            
+        
+
+        circle_marker_02a962a66f34378b9927d35cc267fd40.bindPopup(popup_1bca38f1d9274dec020c261d43b3ab3c)
+        ;
+
+        
+    
+    
+            circle_marker_02a962a66f34378b9927d35cc267fd40.bindTooltip(
+                `<div>
+                     Pincode: 560062
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_3f61d7767d27128f6c345794b2e55b4d = L.circleMarker(
+                [12.9248197, 77.59316260998806],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_1a096ab2346aec659053ab7395402391 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f562518b402d5b592542315ecafbb01 = $(`<div id="html_7f562518b402d5b592542315ecafbb01" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560041<br><b>Count:</b> 2<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_1a096ab2346aec659053ab7395402391.setContent(html_7f562518b402d5b592542315ecafbb01);
+            
+        
+
+        circle_marker_3f61d7767d27128f6c345794b2e55b4d.bindPopup(popup_1a096ab2346aec659053ab7395402391)
+        ;
+
+        
+    
+    
+            circle_marker_3f61d7767d27128f6c345794b2e55b4d.bindTooltip(
+                `<div>
+                     Pincode: 560041
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f1630bd2e71423b840e2ad045392765b = L.circleMarker(
+                [12.98073705, 77.59401354806923],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_dc89e4e8cbb0ccef8677267675716003 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_88e3bbf298e25d1f3c02b5075c268d80 = $(`<div id="html_88e3bbf298e25d1f3c02b5075c268d80" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560001<br><b>Count:</b> 2<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_dc89e4e8cbb0ccef8677267675716003.setContent(html_88e3bbf298e25d1f3c02b5075c268d80);
+            
+        
+
+        circle_marker_f1630bd2e71423b840e2ad045392765b.bindPopup(popup_dc89e4e8cbb0ccef8677267675716003)
+        ;
+
+        
+    
+    
+            circle_marker_f1630bd2e71423b840e2ad045392765b.bindTooltip(
+                `<div>
+                     Pincode: 560001
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9782ae7090f27dbc5e11eba4460ae460 = L.circleMarker(
+                [12.9634209, 77.57942001031068],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_e1ff142dcd0bad4383be811c41d5ec2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26ac65d89510ee1dc615752daf1024ef = $(`<div id="html_26ac65d89510ee1dc615752daf1024ef" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560002<br><b>Count:</b> 2<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_e1ff142dcd0bad4383be811c41d5ec2d.setContent(html_26ac65d89510ee1dc615752daf1024ef);
+            
+        
+
+        circle_marker_9782ae7090f27dbc5e11eba4460ae460.bindPopup(popup_e1ff142dcd0bad4383be811c41d5ec2d)
+        ;
+
+        
+    
+    
+            circle_marker_9782ae7090f27dbc5e11eba4460ae460.bindTooltip(
+                `<div>
+                     Pincode: 560002
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_aa1581f2c1e04dc98cde456b9c04300c = L.circleMarker(
+                [12.994545299999999, 77.55058989892741],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_ccbc7e72365dca58bf96fce7fd5d816e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_857830b1fa1e3b62401e090c064768de = $(`<div id="html_857830b1fa1e3b62401e090c064768de" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560010<br><b>Count:</b> 2<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_ccbc7e72365dca58bf96fce7fd5d816e.setContent(html_857830b1fa1e3b62401e090c064768de);
+            
+        
+
+        circle_marker_aa1581f2c1e04dc98cde456b9c04300c.bindPopup(popup_ccbc7e72365dca58bf96fce7fd5d816e)
+        ;
+
+        
+    
+    
+            circle_marker_aa1581f2c1e04dc98cde456b9c04300c.bindTooltip(
+                `<div>
+                     Pincode: 560010
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9365feed33a316bf084fe54fe54613f5 = L.circleMarker(
+                [12.955815000000001, 77.63889460160827],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_1af3771fcb225d84807407cd50325c51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd6b336c9b3fdf14e7527feb70565495 = $(`<div id="html_bd6b336c9b3fdf14e7527feb70565495" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560071<br><b>Count:</b> 1<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_1af3771fcb225d84807407cd50325c51.setContent(html_bd6b336c9b3fdf14e7527feb70565495);
+            
+        
+
+        circle_marker_9365feed33a316bf084fe54fe54613f5.bindPopup(popup_1af3771fcb225d84807407cd50325c51)
+        ;
+
+        
+    
+    
+            circle_marker_9365feed33a316bf084fe54fe54613f5.bindTooltip(
+                `<div>
+                     Pincode: 560071
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_152197f93d9c083c9eddb67bb7c375b6 = L.circleMarker(
+                [12.9567959, 77.61654985623241],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_c528b9858b6f16bcf4cc3c93738de791 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0dcef6693a020110c7c2006c35f14362 = $(`<div id="html_0dcef6693a020110c7c2006c35f14362" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560047<br><b>Count:</b> 1<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_c528b9858b6f16bcf4cc3c93738de791.setContent(html_0dcef6693a020110c7c2006c35f14362);
+            
+        
+
+        circle_marker_152197f93d9c083c9eddb67bb7c375b6.bindPopup(popup_c528b9858b6f16bcf4cc3c93738de791)
+        ;
+
+        
+    
+    
+            circle_marker_152197f93d9c083c9eddb67bb7c375b6.bindTooltip(
+                `<div>
+                     Pincode: 560047
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_835a1d1f38211213b0e153a61910d926 = L.circleMarker(
+                [12.99611, 77.64807969822446],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_39fc42c000862c74a1e242f4edd066d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b14c1176509459f58689255d0702eab = $(`<div id="html_9b14c1176509459f58689255d0702eab" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560033<br><b>Count:</b> 1<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_39fc42c000862c74a1e242f4edd066d8.setContent(html_9b14c1176509459f58689255d0702eab);
+            
+        
+
+        circle_marker_835a1d1f38211213b0e153a61910d926.bindPopup(popup_39fc42c000862c74a1e242f4edd066d8)
+        ;
+
+        
+    
+    
+            circle_marker_835a1d1f38211213b0e153a61910d926.bindTooltip(
+                `<div>
+                     Pincode: 560033
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bd0b482543fa5467c6b8ed0cea2bf206 = L.circleMarker(
+                [12.940214350000002, 77.525203238765],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_57e9bf970c18e89d4cb41f7a92ee5b92 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2878be3936ae356ccb1bb3ce9163e44 = $(`<div id="html_b2878be3936ae356ccb1bb3ce9163e44" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560039<br><b>Count:</b> 1<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_57e9bf970c18e89d4cb41f7a92ee5b92.setContent(html_b2878be3936ae356ccb1bb3ce9163e44);
+            
+        
+
+        circle_marker_bd0b482543fa5467c6b8ed0cea2bf206.bindPopup(popup_57e9bf970c18e89d4cb41f7a92ee5b92)
+        ;
+
+        
+    
+    
+            circle_marker_bd0b482543fa5467c6b8ed0cea2bf206.bindTooltip(
+                `<div>
+                     Pincode: 560039
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_87f2f2a3be98ee2615f3829cc0ef6647 = L.circleMarker(
+                [12.7836706, 77.41612642889075],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_54f8e4e8ba9cd466d79b4186d087f974 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bbe6d5b60a91f3ca63ff9fde68caf77b = $(`<div id="html_bbe6d5b60a91f3ca63ff9fde68caf77b" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 562109<br><b>Count:</b> 1<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_54f8e4e8ba9cd466d79b4186d087f974.setContent(html_bbe6d5b60a91f3ca63ff9fde68caf77b);
+            
+        
+
+        circle_marker_87f2f2a3be98ee2615f3829cc0ef6647.bindPopup(popup_54f8e4e8ba9cd466d79b4186d087f974)
+        ;
+
+        
+    
+    
+            circle_marker_87f2f2a3be98ee2615f3829cc0ef6647.bindTooltip(
+                `<div>
+                     Pincode: 562109
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1dfc39eefbb235083e2af7d5e24cb869 = L.circleMarker(
+                [12.91471465, 77.51591275456562],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_c4e1a178d6dbf06413e12e12c6a05eee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f2cc76f8af19b0115ddd02b09f8927cd = $(`<div id="html_f2cc76f8af19b0115ddd02b09f8927cd" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560098<br><b>Count:</b> 1<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_c4e1a178d6dbf06413e12e12c6a05eee.setContent(html_f2cc76f8af19b0115ddd02b09f8927cd);
+            
+        
+
+        circle_marker_1dfc39eefbb235083e2af7d5e24cb869.bindPopup(popup_c4e1a178d6dbf06413e12e12c6a05eee)
+        ;
+
+        
+    
+    
+            circle_marker_1dfc39eefbb235083e2af7d5e24cb869.bindTooltip(
+                `<div>
+                     Pincode: 560098
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cf2a8c2b4221821e4052a010671e8d24 = L.circleMarker(
+                [12.962264000000001, 77.538005926663],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_5dc337121c856e0075988a65e0ea1ccd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_717b301a027623bc5b069461d3387faa = $(`<div id="html_717b301a027623bc5b069461d3387faa" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560104<br><b>Count:</b> 1<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_5dc337121c856e0075988a65e0ea1ccd.setContent(html_717b301a027623bc5b069461d3387faa);
+            
+        
+
+        circle_marker_cf2a8c2b4221821e4052a010671e8d24.bindPopup(popup_5dc337121c856e0075988a65e0ea1ccd)
+        ;
+
+        
+    
+    
+            circle_marker_cf2a8c2b4221821e4052a010671e8d24.bindTooltip(
+                `<div>
+                     Pincode: 560104
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6483675e6d47fd7d52c1c127c36d6958 = L.circleMarker(
+                [12.865611300000001, 77.5220451319606],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_fda93252d61362cae0c3e97b8f18382f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_658d306bd1a155253e7f1de701806fdf = $(`<div id="html_658d306bd1a155253e7f1de701806fdf" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560109<br><b>Count:</b> 1<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_fda93252d61362cae0c3e97b8f18382f.setContent(html_658d306bd1a155253e7f1de701806fdf);
+            
+        
+
+        circle_marker_6483675e6d47fd7d52c1c127c36d6958.bindPopup(popup_fda93252d61362cae0c3e97b8f18382f)
+        ;
+
+        
+    
+    
+            circle_marker_6483675e6d47fd7d52c1c127c36d6958.bindTooltip(
+                `<div>
+                     Pincode: 560109
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_125b017ed7bb00bc58b697006812f043 = L.circleMarker(
+                [12.9506662, 77.50193688801572],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_2a7a175434b5adf15273a6ac679e75f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5ffc30df6527fd52255a175e65d2463 = $(`<div id="html_b5ffc30df6527fd52255a175e65d2463" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560056<br><b>Count:</b> 1<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_2a7a175434b5adf15273a6ac679e75f6.setContent(html_b5ffc30df6527fd52255a175e65d2463);
+            
+        
+
+        circle_marker_125b017ed7bb00bc58b697006812f043.bindPopup(popup_2a7a175434b5adf15273a6ac679e75f6)
+        ;
+
+        
+    
+    
+            circle_marker_125b017ed7bb00bc58b697006812f043.bindTooltip(
+                `<div>
+                     Pincode: 560056
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8e2bc2592ff0cb3146930d00b705698a = L.circleMarker(
+                [12.99202515, 77.57785663540147],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_2528c6975d3cd3b9479183c3d9fcdb66 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36736f0b8ea253101cbc84c51d4fbfb8 = $(`<div id="html_36736f0b8ea253101cbc84c51d4fbfb8" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560020<br><b>Count:</b> 1<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_2528c6975d3cd3b9479183c3d9fcdb66.setContent(html_36736f0b8ea253101cbc84c51d4fbfb8);
+            
+        
+
+        circle_marker_8e2bc2592ff0cb3146930d00b705698a.bindPopup(popup_2528c6975d3cd3b9479183c3d9fcdb66)
+        ;
+
+        
+    
+    
+            circle_marker_8e2bc2592ff0cb3146930d00b705698a.bindTooltip(
+                `<div>
+                     Pincode: 560020
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0ca69fe639efe5ccb56b618b9ce1cb32 = L.circleMarker(
+                [12.94181345, 77.37148393022193],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_da6b86a4029a74ba37a6f5da31333bee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_38eab7a7213b7b0e998bdc04e37b30b1 = $(`<div id="html_38eab7a7213b7b0e998bdc04e37b30b1" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 562130<br><b>Count:</b> 1<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_da6b86a4029a74ba37a6f5da31333bee.setContent(html_38eab7a7213b7b0e998bdc04e37b30b1);
+            
+        
+
+        circle_marker_0ca69fe639efe5ccb56b618b9ce1cb32.bindPopup(popup_da6b86a4029a74ba37a6f5da31333bee)
+        ;
+
+        
+    
+    
+            circle_marker_0ca69fe639efe5ccb56b618b9ce1cb32.bindTooltip(
+                `<div>
+                     Pincode: 562130
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_286aeca4539b94378c26c19d67a426aa = L.circleMarker(
+                [12.942822249999999, 77.55488352986137],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_6ca1d6fda3d38ef606816eadde496d0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bac39ec4df7aa7ba22dc1f0e17a7bfbd = $(`<div id="html_bac39ec4df7aa7ba22dc1f0e17a7bfbd" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560050<br><b>Count:</b> 1<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_6ca1d6fda3d38ef606816eadde496d0b.setContent(html_bac39ec4df7aa7ba22dc1f0e17a7bfbd);
+            
+        
+
+        circle_marker_286aeca4539b94378c26c19d67a426aa.bindPopup(popup_6ca1d6fda3d38ef606816eadde496d0b)
+        ;
+
+        
+    
+    
+            circle_marker_286aeca4539b94378c26c19d67a426aa.bindTooltip(
+                `<div>
+                     Pincode: 560050
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_267f024e9713051f9df9cb33ae43f6d3 = L.circleMarker(
+                [12.8243154, 77.45972148668953],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_418492677c71c8b51016ab0c24c56662);
+        
+    
+        var popup_ec253433304bfd89ce0123855f22b551 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fff4056829e1971bdaf780e70dfa1b94 = $(`<div id="html_fff4056829e1971bdaf780e70dfa1b94" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560082<br><b>Count:</b> 1<br><b>Cluster:</b> Divyasree</div>`)[0];
+                popup_ec253433304bfd89ce0123855f22b551.setContent(html_fff4056829e1971bdaf780e70dfa1b94);
+            
+        
+
+        circle_marker_267f024e9713051f9df9cb33ae43f6d3.bindPopup(popup_ec253433304bfd89ce0123855f22b551)
+        ;
+
+        
+    
+    
+            circle_marker_267f024e9713051f9df9cb33ae43f6d3.bindTooltip(
+                `<div>
+                     Pincode: 560082
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_418492677c71c8b51016ab0c24c56662.addTo(map_1b3f80e30d8680f18147430fdb03ec4e);
+        
+    
+            var feature_group_f7706962ffb2ded9f656f223c1002553 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_85b9e594fddcb6e642adeea7657a25e2 = L.circleMarker(
+                [13.060806249999999, 77.65483324435313],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.217391304347826, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_4df93ff3e6e913e59f952edffd10cef2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d34c4b51dae181b49e6f5284f8aa42a = $(`<div id="html_1d34c4b51dae181b49e6f5284f8aa42a" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560077<br><b>Count:</b> 4<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_4df93ff3e6e913e59f952edffd10cef2.setContent(html_1d34c4b51dae181b49e6f5284f8aa42a);
+            
+        
+
+        circle_marker_85b9e594fddcb6e642adeea7657a25e2.bindPopup(popup_4df93ff3e6e913e59f952edffd10cef2)
+        ;
+
+        
+    
+    
+            circle_marker_85b9e594fddcb6e642adeea7657a25e2.bindTooltip(
+                `<div>
+                     Pincode: 560077
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_51c4749b78c56d7796821db0a5b01541 = L.circleMarker(
+                [13.1439643, 77.55976772631487],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_d7a451db80fef0667f300bb6397706c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_922834ba687990ffb9e90ed48e414994 = $(`<div id="html_922834ba687990ffb9e90ed48e414994" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560064<br><b>Count:</b> 3<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_d7a451db80fef0667f300bb6397706c0.setContent(html_922834ba687990ffb9e90ed48e414994);
+            
+        
+
+        circle_marker_51c4749b78c56d7796821db0a5b01541.bindPopup(popup_d7a451db80fef0667f300bb6397706c0)
+        ;
+
+        
+    
+    
+            circle_marker_51c4749b78c56d7796821db0a5b01541.bindTooltip(
+                `<div>
+                     Pincode: 560064
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d80c8c05d952b47d9182ea43a5c437c = L.circleMarker(
+                [13.02237675, 77.64396485238625],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_76e4d590bfdcc04e5d7420f7b2ddaf74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0625d5ae217c15ea05c7b8de3da52ac3 = $(`<div id="html_0625d5ae217c15ea05c7b8de3da52ac3" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560043<br><b>Count:</b> 3<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_76e4d590bfdcc04e5d7420f7b2ddaf74.setContent(html_0625d5ae217c15ea05c7b8de3da52ac3);
+            
+        
+
+        circle_marker_1d80c8c05d952b47d9182ea43a5c437c.bindPopup(popup_76e4d590bfdcc04e5d7420f7b2ddaf74)
+        ;
+
+        
+    
+    
+            circle_marker_1d80c8c05d952b47d9182ea43a5c437c.bindTooltip(
+                `<div>
+                     Pincode: 560043
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0d4dd9312f4bf1c5b09346c7b32fe135 = L.circleMarker(
+                [13.12419585, 77.68589536818416],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_a067db53aff2b6efd6471fbbde22caae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c19c0219561d8c10af06e07c4023827 = $(`<div id="html_7c19c0219561d8c10af06e07c4023827" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 562149<br><b>Count:</b> 2<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_a067db53aff2b6efd6471fbbde22caae.setContent(html_7c19c0219561d8c10af06e07c4023827);
+            
+        
+
+        circle_marker_0d4dd9312f4bf1c5b09346c7b32fe135.bindPopup(popup_a067db53aff2b6efd6471fbbde22caae)
+        ;
+
+        
+    
+    
+            circle_marker_0d4dd9312f4bf1c5b09346c7b32fe135.bindTooltip(
+                `<div>
+                     Pincode: 562149
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c11be687ee0ab0eab4262208d5e335a3 = L.circleMarker(
+                [13.2507576, 77.67141513612177],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_2bedb6fc50b69751c658c130a381f959 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83f0a1637b59a491442feb45955158be = $(`<div id="html_83f0a1637b59a491442feb45955158be" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 562110<br><b>Count:</b> 2<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_2bedb6fc50b69751c658c130a381f959.setContent(html_83f0a1637b59a491442feb45955158be);
+            
+        
+
+        circle_marker_c11be687ee0ab0eab4262208d5e335a3.bindPopup(popup_2bedb6fc50b69751c658c130a381f959)
+        ;
+
+        
+    
+    
+            circle_marker_c11be687ee0ab0eab4262208d5e335a3.bindTooltip(
+                `<div>
+                     Pincode: 562110
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6a4e3ae9c00f5ec26de138bab864a094 = L.circleMarker(
+                [18.565031736888887, 73.780571896],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_25428d60cb4ec82c5e056c03f1a43ea0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d63a079703a7684c56fdcbfe3368d8f7 = $(`<div id="html_d63a079703a7684c56fdcbfe3368d8f7" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 411045<br><b>Count:</b> 2<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_25428d60cb4ec82c5e056c03f1a43ea0.setContent(html_d63a079703a7684c56fdcbfe3368d8f7);
+            
+        
+
+        circle_marker_6a4e3ae9c00f5ec26de138bab864a094.bindPopup(popup_25428d60cb4ec82c5e056c03f1a43ea0)
+        ;
+
+        
+    
+    
+            circle_marker_6a4e3ae9c00f5ec26de138bab864a094.bindTooltip(
+                `<div>
+                     Pincode: 411045
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8d6bcd77512f9bcc2a91b0d65128c8ec = L.circleMarker(
+                [13.0277171, 77.54508411276232],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_bb2711932e65e5a512fd7521346e178b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3ebbc6d70e6ddc63c424b038e07e47d = $(`<div id="html_a3ebbc6d70e6ddc63c424b038e07e47d" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560022<br><b>Count:</b> 2<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_bb2711932e65e5a512fd7521346e178b.setContent(html_a3ebbc6d70e6ddc63c424b038e07e47d);
+            
+        
+
+        circle_marker_8d6bcd77512f9bcc2a91b0d65128c8ec.bindPopup(popup_bb2711932e65e5a512fd7521346e178b)
+        ;
+
+        
+    
+    
+            circle_marker_8d6bcd77512f9bcc2a91b0d65128c8ec.bindTooltip(
+                `<div>
+                     Pincode: 560022
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c4976ab1a0614ed49eb1b86b4c489410 = L.circleMarker(
+                [13.04143835, 77.59720076462503],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_5cb018f80ea2fb6367b606bb1bbf25f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_21a67523f0519dbb5086ecc24295abef = $(`<div id="html_21a67523f0519dbb5086ecc24295abef" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560024<br><b>Count:</b> 2<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_5cb018f80ea2fb6367b606bb1bbf25f3.setContent(html_21a67523f0519dbb5086ecc24295abef);
+            
+        
+
+        circle_marker_c4976ab1a0614ed49eb1b86b4c489410.bindPopup(popup_5cb018f80ea2fb6367b606bb1bbf25f3)
+        ;
+
+        
+    
+    
+            circle_marker_c4976ab1a0614ed49eb1b86b4c489410.bindTooltip(
+                `<div>
+                     Pincode: 560024
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_48252ff4bfbe53b1232889cfbe00ac2f = L.circleMarker(
+                [13.0778781, 77.55690355873023],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_542cd5997640b9d15d99e92348e07602 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8a548de4d3f7eed66ae52f3f87ac716 = $(`<div id="html_a8a548de4d3f7eed66ae52f3f87ac716" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560097<br><b>Count:</b> 2<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_542cd5997640b9d15d99e92348e07602.setContent(html_a8a548de4d3f7eed66ae52f3f87ac716);
+            
+        
+
+        circle_marker_48252ff4bfbe53b1232889cfbe00ac2f.bindPopup(popup_542cd5997640b9d15d99e92348e07602)
+        ;
+
+        
+    
+    
+            circle_marker_48252ff4bfbe53b1232889cfbe00ac2f.bindTooltip(
+                `<div>
+                     Pincode: 560097
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9924de809c697a3a276a353bf5fe21c = L.circleMarker(
+                [13.1273223, 77.51322220048567],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_527f360b3d9c5a0bcd0ee8d91a625139 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cda081381ac16326ac7d31edb07dcd96 = $(`<div id="html_cda081381ac16326ac7d31edb07dcd96" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560088<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_527f360b3d9c5a0bcd0ee8d91a625139.setContent(html_cda081381ac16326ac7d31edb07dcd96);
+            
+        
+
+        circle_marker_b9924de809c697a3a276a353bf5fe21c.bindPopup(popup_527f360b3d9c5a0bcd0ee8d91a625139)
+        ;
+
+        
+    
+    
+            circle_marker_b9924de809c697a3a276a353bf5fe21c.bindTooltip(
+                `<div>
+                     Pincode: 560088
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_bbe92eb459744a98978b24cd34c55a7e = L.circleMarker(
+                [13.06149045, 77.59389607771229],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_f3dc4c8394dd6f1f80bf2cac529bb7b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a6fd19f75a01eb4801e3952c2f0e80b = $(`<div id="html_9a6fd19f75a01eb4801e3952c2f0e80b" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560092<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_f3dc4c8394dd6f1f80bf2cac529bb7b6.setContent(html_9a6fd19f75a01eb4801e3952c2f0e80b);
+            
+        
+
+        circle_marker_bbe92eb459744a98978b24cd34c55a7e.bindPopup(popup_f3dc4c8394dd6f1f80bf2cac529bb7b6)
+        ;
+
+        
+    
+    
+            circle_marker_bbe92eb459744a98978b24cd34c55a7e.bindTooltip(
+                `<div>
+                     Pincode: 560092
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_23c770e2129074d805a4ae9d544c326c = L.circleMarker(
+                [13.0262912, 77.59979236707858],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_7035c52f0b8aeb67c1b6d26871a24ee2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8daa96e415506bb6959b9fbecbe147e = $(`<div id="html_a8daa96e415506bb6959b9fbecbe147e" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560032<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_7035c52f0b8aeb67c1b6d26871a24ee2.setContent(html_a8daa96e415506bb6959b9fbecbe147e);
+            
+        
+
+        circle_marker_23c770e2129074d805a4ae9d544c326c.bindPopup(popup_7035c52f0b8aeb67c1b6d26871a24ee2)
+        ;
+
+        
+    
+    
+            circle_marker_23c770e2129074d805a4ae9d544c326c.bindTooltip(
+                `<div>
+                     Pincode: 560032
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b861d6341d1757c3282941960c74c91 = L.circleMarker(
+                [13.04810475, 77.51338368754224],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_bb12e418f9b5b4cd5195d6911d23b4b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc14ddd41c41a56fcb9ac15cb113a700 = $(`<div id="html_dc14ddd41c41a56fcb9ac15cb113a700" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560057<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_bb12e418f9b5b4cd5195d6911d23b4b5.setContent(html_dc14ddd41c41a56fcb9ac15cb113a700);
+            
+        
+
+        circle_marker_2b861d6341d1757c3282941960c74c91.bindPopup(popup_bb12e418f9b5b4cd5195d6911d23b4b5)
+        ;
+
+        
+    
+    
+            circle_marker_2b861d6341d1757c3282941960c74c91.bindTooltip(
+                `<div>
+                     Pincode: 560057
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_422308504cbdab5943b279e973cbb148 = L.circleMarker(
+                [13.1735328, 77.504617700899],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_a8eecb5f55aefcd835ac6dde849c3c25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b633d313caecb2500abb1b807d692e49 = $(`<div id="html_b633d313caecb2500abb1b807d692e49" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560089<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_a8eecb5f55aefcd835ac6dde849c3c25.setContent(html_b633d313caecb2500abb1b807d692e49);
+            
+        
+
+        circle_marker_422308504cbdab5943b279e973cbb148.bindPopup(popup_a8eecb5f55aefcd835ac6dde849c3c25)
+        ;
+
+        
+    
+    
+            circle_marker_422308504cbdab5943b279e973cbb148.bindTooltip(
+                `<div>
+                     Pincode: 560089
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6130952c6c2f6c6d179649eb6d6325fb = L.circleMarker(
+                [13.025412500000002, 77.50902344534494],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_7bf8d26185fd25cc8beb397aa296fcb7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efa65c1711d9eb30f2189ed83437465c = $(`<div id="html_efa65c1711d9eb30f2189ed83437465c" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560058<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_7bf8d26185fd25cc8beb397aa296fcb7.setContent(html_efa65c1711d9eb30f2189ed83437465c);
+            
+        
+
+        circle_marker_6130952c6c2f6c6d179649eb6d6325fb.bindPopup(popup_7bf8d26185fd25cc8beb397aa296fcb7)
+        ;
+
+        
+    
+    
+            circle_marker_6130952c6c2f6c6d179649eb6d6325fb.bindTooltip(
+                `<div>
+                     Pincode: 560058
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e63ab54c36bcd124abb83cbd6274089c = L.circleMarker(
+                [19.17557596521739, 72.95132770869564],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_1c7ceb664cac5edfe3f49be45e211047 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_932d7dcb45309800d838526c34d583f9 = $(`<div id="html_932d7dcb45309800d838526c34d583f9" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 400080<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_1c7ceb664cac5edfe3f49be45e211047.setContent(html_932d7dcb45309800d838526c34d583f9);
+            
+        
+
+        circle_marker_e63ab54c36bcd124abb83cbd6274089c.bindPopup(popup_1c7ceb664cac5edfe3f49be45e211047)
+        ;
+
+        
+    
+    
+            circle_marker_e63ab54c36bcd124abb83cbd6274089c.bindTooltip(
+                `<div>
+                     Pincode: 400080
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_edff8192c940806059c51f7e97af30ec = L.circleMarker(
+                [18.657633140677966, 73.8759489440678],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_339e5f02c46ee567f6f9fdfe699825c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c62983cbba120838e0f10d51c328f355 = $(`<div id="html_c62983cbba120838e0f10d51c328f355" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 412105<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_339e5f02c46ee567f6f9fdfe699825c2.setContent(html_c62983cbba120838e0f10d51c328f355);
+            
+        
+
+        circle_marker_edff8192c940806059c51f7e97af30ec.bindPopup(popup_339e5f02c46ee567f6f9fdfe699825c2)
+        ;
+
+        
+    
+    
+            circle_marker_edff8192c940806059c51f7e97af30ec.bindTooltip(
+                `<div>
+                     Pincode: 412105
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_47ff0ed2cc03d9cc549885fb757fcb6c = L.circleMarker(
+                [13.028494550000001, 77.65808014677248],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_cafb1ba9821e2fb271c49b063938bdd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d3147d4c8dee87d53bdb577d0c8c2d5 = $(`<div id="html_7d3147d4c8dee87d53bdb577d0c8c2d5" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560113<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_cafb1ba9821e2fb271c49b063938bdd3.setContent(html_7d3147d4c8dee87d53bdb577d0c8c2d5);
+            
+        
+
+        circle_marker_47ff0ed2cc03d9cc549885fb757fcb6c.bindPopup(popup_cafb1ba9821e2fb271c49b063938bdd3)
+        ;
+
+        
+    
+    
+            circle_marker_47ff0ed2cc03d9cc549885fb757fcb6c.bindTooltip(
+                `<div>
+                     Pincode: 560113
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f15bf2d0e25c310e45d442d037f65de6 = L.circleMarker(
+                [13.04865895, 77.55129027998424],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_685a41f2a3be89d9c97604271e5b795b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fd06ef995778746f490ac84e479e4de7 = $(`<div id="html_fd06ef995778746f490ac84e479e4de7" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560013<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_685a41f2a3be89d9c97604271e5b795b.setContent(html_fd06ef995778746f490ac84e479e4de7);
+            
+        
+
+        circle_marker_f15bf2d0e25c310e45d442d037f65de6.bindPopup(popup_685a41f2a3be89d9c97604271e5b795b)
+        ;
+
+        
+    
+    
+            circle_marker_f15bf2d0e25c310e45d442d037f65de6.bindTooltip(
+                `<div>
+                     Pincode: 560013
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d0b61fea45fbbec3ba5acde5debd9322 = L.circleMarker(
+                [18.533273649253733, 73.83111932238806],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_53f991dbf7def8bc6c249aefa4d85057 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_482909c0441be99733d5826d71d62087 = $(`<div id="html_482909c0441be99733d5826d71d62087" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 411016<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_53f991dbf7def8bc6c249aefa4d85057.setContent(html_482909c0441be99733d5826d71d62087);
+            
+        
+
+        circle_marker_d0b61fea45fbbec3ba5acde5debd9322.bindPopup(popup_53f991dbf7def8bc6c249aefa4d85057)
+        ;
+
+        
+    
+    
+            circle_marker_d0b61fea45fbbec3ba5acde5debd9322.bindTooltip(
+                `<div>
+                     Pincode: 411016
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_29c448c4ba1e264b2111af684e6f2cd0 = L.circleMarker(
+                [13.0398962, 77.57309728338848],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_914377ceb8ad6649da2535f008b8d0fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_645aac0addc3ec3142be2acb58f133d9 = $(`<div id="html_645aac0addc3ec3142be2acb58f133d9" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560094<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_914377ceb8ad6649da2535f008b8d0fe.setContent(html_645aac0addc3ec3142be2acb58f133d9);
+            
+        
+
+        circle_marker_29c448c4ba1e264b2111af684e6f2cd0.bindPopup(popup_914377ceb8ad6649da2535f008b8d0fe)
+        ;
+
+        
+    
+    
+            circle_marker_29c448c4ba1e264b2111af684e6f2cd0.bindTooltip(
+                `<div>
+                     Pincode: 560094
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f6a894a42a70ca9012d1395eb9e7f132 = L.circleMarker(
+                [15.475300864705881, 78.48088266764707],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_b3552f1dd865e419eef28916ebd0c39e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5dc972d9964314e916d8a5f28bffde4d = $(`<div id="html_5dc972d9964314e916d8a5f28bffde4d" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 518502<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_b3552f1dd865e419eef28916ebd0c39e.setContent(html_5dc972d9964314e916d8a5f28bffde4d);
+            
+        
+
+        circle_marker_f6a894a42a70ca9012d1395eb9e7f132.bindPopup(popup_b3552f1dd865e419eef28916ebd0c39e)
+        ;
+
+        
+    
+    
+            circle_marker_f6a894a42a70ca9012d1395eb9e7f132.bindTooltip(
+                `<div>
+                     Pincode: 518502
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_775480d95b0a36ea44768713f5b41e7e = L.circleMarker(
+                [13.01227635, 77.62815097261837],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_71423d57ed683fc0493846e7b6a693da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd672253edb10359df461152933028ec = $(`<div id="html_bd672253edb10359df461152933028ec" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560084<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_71423d57ed683fc0493846e7b6a693da.setContent(html_bd672253edb10359df461152933028ec);
+            
+        
+
+        circle_marker_775480d95b0a36ea44768713f5b41e7e.bindPopup(popup_71423d57ed683fc0493846e7b6a693da)
+        ;
+
+        
+    
+    
+            circle_marker_775480d95b0a36ea44768713f5b41e7e.bindTooltip(
+                `<div>
+                     Pincode: 560084
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_046d2d26a9b8a28e88c2e573d7aeb568 = L.circleMarker(
+                [13.302690649999999, 77.15664481676791],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_f55e2d4e2f06c9e9669084dfa3f20236 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e828b46f4b6ba838f9bf4f70aa9a9bee = $(`<div id="html_e828b46f4b6ba838f9bf4f70aa9a9bee" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 572104<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_f55e2d4e2f06c9e9669084dfa3f20236.setContent(html_e828b46f4b6ba838f9bf4f70aa9a9bee);
+            
+        
+
+        circle_marker_046d2d26a9b8a28e88c2e573d7aeb568.bindPopup(popup_f55e2d4e2f06c9e9669084dfa3f20236)
+        ;
+
+        
+    
+    
+            circle_marker_046d2d26a9b8a28e88c2e573d7aeb568.bindTooltip(
+                `<div>
+                     Pincode: 572104
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_77b5e755933ed1d24b14d400514bc883 = L.circleMarker(
+                [13.04019335, 77.4880475589605],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "purple", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_f7706962ffb2ded9f656f223c1002553);
+        
+    
+        var popup_ef5e5427c6b50aacb2eaf87508c054b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_006bbe93bb7869fc7308ef5f92ef35fe = $(`<div id="html_006bbe93bb7869fc7308ef5f92ef35fe" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560073<br><b>Count:</b> 1<br><b>Cluster:</b> Umiya City</div>`)[0];
+                popup_ef5e5427c6b50aacb2eaf87508c054b7.setContent(html_006bbe93bb7869fc7308ef5f92ef35fe);
+            
+        
+
+        circle_marker_77b5e755933ed1d24b14d400514bc883.bindPopup(popup_ef5e5427c6b50aacb2eaf87508c054b7)
+        ;
+
+        
+    
+    
+            circle_marker_77b5e755933ed1d24b14d400514bc883.bindTooltip(
+                `<div>
+                     Pincode: 560073
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_f7706962ffb2ded9f656f223c1002553.addTo(map_1b3f80e30d8680f18147430fdb03ec4e);
+        
+    
+            var feature_group_097190486a307b4237c69a067413d638 = L.featureGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_59f5ee638b076ae70e6d8d92857e014e = L.circleMarker(
+                [12.96684925, 77.75164275408477],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 19.565217391304348, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_fbfd67d758d9a4ab5443c05e632e55b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6e4f510ccd78fd52383e10451981e4b9 = $(`<div id="html_6e4f510ccd78fd52383e10451981e4b9" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560066<br><b>Count:</b> 15<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_fbfd67d758d9a4ab5443c05e632e55b3.setContent(html_6e4f510ccd78fd52383e10451981e4b9);
+            
+        
+
+        circle_marker_59f5ee638b076ae70e6d8d92857e014e.bindPopup(popup_fbfd67d758d9a4ab5443c05e632e55b3)
+        ;
+
+        
+    
+    
+            circle_marker_59f5ee638b076ae70e6d8d92857e014e.bindTooltip(
+                `<div>
+                     Pincode: 560066
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d0e93e592c7f56cbb21d5637585848bf = L.circleMarker(
+                [12.9623272, 77.6972859093634],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.347826086956522, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_3899107f8fbcb6e3b76167ef78e81966 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_420b78142bbffd7edb72f14d2741376c = $(`<div id="html_420b78142bbffd7edb72f14d2741376c" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560037<br><b>Count:</b> 11<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_3899107f8fbcb6e3b76167ef78e81966.setContent(html_420b78142bbffd7edb72f14d2741376c);
+            
+        
+
+        circle_marker_d0e93e592c7f56cbb21d5637585848bf.bindPopup(popup_3899107f8fbcb6e3b76167ef78e81966)
+        ;
+
+        
+    
+    
+            circle_marker_d0e93e592c7f56cbb21d5637585848bf.bindTooltip(
+                `<div>
+                     Pincode: 560037
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_95451bc685f6209d51b3a404e3486e32 = L.circleMarker(
+                [12.89793005, 77.70092991846323],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.347826086956522, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_2b213c63b9e312a1aa4927474e5dcd94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee95ce9fc83ac7bdf5b9f7687888e959 = $(`<div id="html_ee95ce9fc83ac7bdf5b9f7687888e959" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560035<br><b>Count:</b> 11<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_2b213c63b9e312a1aa4927474e5dcd94.setContent(html_ee95ce9fc83ac7bdf5b9f7687888e959);
+            
+        
+
+        circle_marker_95451bc685f6209d51b3a404e3486e32.bindPopup(popup_2b213c63b9e312a1aa4927474e5dcd94)
+        ;
+
+        
+    
+    
+            circle_marker_95451bc685f6209d51b3a404e3486e32.bindTooltip(
+                `<div>
+                     Pincode: 560035
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9c4b1a74d73e64f71f6d9ad9804f41f7 = L.circleMarker(
+                [12.9455662, 77.82131801897232],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.043478260869565, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_227b029edf00c4ed6c89d0cead7f5194 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b65f8534793df42c2dddb6817fd8ef7f = $(`<div id="html_b65f8534793df42c2dddb6817fd8ef7f" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560067<br><b>Count:</b> 10<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_227b029edf00c4ed6c89d0cead7f5194.setContent(html_b65f8534793df42c2dddb6817fd8ef7f);
+            
+        
+
+        circle_marker_9c4b1a74d73e64f71f6d9ad9804f41f7.bindPopup(popup_227b029edf00c4ed6c89d0cead7f5194)
+        ;
+
+        
+    
+    
+            circle_marker_9c4b1a74d73e64f71f6d9ad9804f41f7.bindTooltip(
+                `<div>
+                     Pincode: 560067
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ef00183432ac11bcfb199dd893499bd0 = L.circleMarker(
+                [12.92446915, 77.72919469986229],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.73913043478261, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_0e58e9e8db30f7a93fa87c725f5e95f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7c6819f2af75e6c470102d7fbe81fae7 = $(`<div id="html_7c6819f2af75e6c470102d7fbe81fae7" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560087<br><b>Count:</b> 9<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_0e58e9e8db30f7a93fa87c725f5e95f4.setContent(html_7c6819f2af75e6c470102d7fbe81fae7);
+            
+        
+
+        circle_marker_ef00183432ac11bcfb199dd893499bd0.bindPopup(popup_0e58e9e8db30f7a93fa87c725f5e95f4)
+        ;
+
+        
+    
+    
+            circle_marker_ef00183432ac11bcfb199dd893499bd0.bindTooltip(
+                `<div>
+                     Pincode: 560087
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_abdcd3faceee9cbc39f22576dfd096e5 = L.circleMarker(
+                [12.98904855, 77.70673151352824],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.434782608695652, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_7dc50019720cfae72ca03bc3da0d670a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6d7df6705a34d0d7e837bc99e0b1857 = $(`<div id="html_d6d7df6705a34d0d7e837bc99e0b1857" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560048<br><b>Count:</b> 8<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_7dc50019720cfae72ca03bc3da0d670a.setContent(html_d6d7df6705a34d0d7e837bc99e0b1857);
+            
+        
+
+        circle_marker_abdcd3faceee9cbc39f22576dfd096e5.bindPopup(popup_7dc50019720cfae72ca03bc3da0d670a)
+        ;
+
+        
+    
+    
+            circle_marker_abdcd3faceee9cbc39f22576dfd096e5.bindTooltip(
+                `<div>
+                     Pincode: 560048
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_632fa02cbd3d36d7a265ab349e69e495 = L.circleMarker(
+                [13.01969, 77.67737742671628],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.826086956521739, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_42a8bd1e71b0544139ab97be17330112 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bc29daa2048a8a6f405f57d894d9325f = $(`<div id="html_bc29daa2048a8a6f405f57d894d9325f" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560016<br><b>Count:</b> 6<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_42a8bd1e71b0544139ab97be17330112.setContent(html_bc29daa2048a8a6f405f57d894d9325f);
+            
+        
+
+        circle_marker_632fa02cbd3d36d7a265ab349e69e495.bindPopup(popup_42a8bd1e71b0544139ab97be17330112)
+        ;
+
+        
+    
+    
+            circle_marker_632fa02cbd3d36d7a265ab349e69e495.bindTooltip(
+                `<div>
+                     Pincode: 560016
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_de7be8759e3275ffee35a5f468295334 = L.circleMarker(
+                [13.016153150000001, 77.69816482402385],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.521739130434782, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_c335e16a73db9b37bbf7f905aeab3334 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b816d4e64ba1f5b93d043aa254af505d = $(`<div id="html_b816d4e64ba1f5b93d043aa254af505d" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560036<br><b>Count:</b> 5<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_c335e16a73db9b37bbf7f905aeab3334.setContent(html_b816d4e64ba1f5b93d043aa254af505d);
+            
+        
+
+        circle_marker_de7be8759e3275ffee35a5f468295334.bindPopup(popup_c335e16a73db9b37bbf7f905aeab3334)
+        ;
+
+        
+    
+    
+            circle_marker_de7be8759e3275ffee35a5f468295334.bindTooltip(
+                `<div>
+                     Pincode: 560036
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df0bcbde5c687bdbb6693c8e5ca13be2 = L.circleMarker(
+                [12.8718212, 77.78378355879926],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.217391304347826, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_a469d4e95545a3715405c98e245823c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_975bd384b42d88c794edf8ef52d5102d = $(`<div id="html_975bd384b42d88c794edf8ef52d5102d" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 562125<br><b>Count:</b> 4<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_a469d4e95545a3715405c98e245823c7.setContent(html_975bd384b42d88c794edf8ef52d5102d);
+            
+        
+
+        circle_marker_df0bcbde5c687bdbb6693c8e5ca13be2.bindPopup(popup_a469d4e95545a3715405c98e245823c7)
+        ;
+
+        
+    
+    
+            circle_marker_df0bcbde5c687bdbb6693c8e5ca13be2.bindTooltip(
+                `<div>
+                     Pincode: 562125
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4b969ec9603c147aa7bcbfd4687964fb = L.circleMarker(
+                [13.059931599999999, 77.73077790976404],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.217391304347826, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_dd995b4a5ccd8158bcd4fc0e82cadd25 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d816ffe3f78376eda33d4c63bdbf01da = $(`<div id="html_d816ffe3f78376eda33d4c63bdbf01da" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560049<br><b>Count:</b> 4<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_dd995b4a5ccd8158bcd4fc0e82cadd25.setContent(html_d816ffe3f78376eda33d4c63bdbf01da);
+            
+        
+
+        circle_marker_4b969ec9603c147aa7bcbfd4687964fb.bindPopup(popup_dd995b4a5ccd8158bcd4fc0e82cadd25)
+        ;
+
+        
+    
+    
+            circle_marker_4b969ec9603c147aa7bcbfd4687964fb.bindTooltip(
+                `<div>
+                     Pincode: 560049
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_14030a8523fd4886cbe39d04e0aea2f8 = L.circleMarker(
+                [12.83984195, 77.72426790247441],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_277253337c11997cd9db4e565c876b2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a4bb65045bf2827788833d9389002fd = $(`<div id="html_3a4bb65045bf2827788833d9389002fd" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560099<br><b>Count:</b> 2<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_277253337c11997cd9db4e565c876b2c.setContent(html_3a4bb65045bf2827788833d9389002fd);
+            
+        
+
+        circle_marker_14030a8523fd4886cbe39d04e0aea2f8.bindPopup(popup_277253337c11997cd9db4e565c876b2c)
+        ;
+
+        
+    
+    
+            circle_marker_14030a8523fd4886cbe39d04e0aea2f8.bindTooltip(
+                `<div>
+                     Pincode: 560099
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7fdb6e1332afea850c7b8e1b2307a461 = L.circleMarker(
+                [12.778069649999999, 77.74184963330805],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_474b005f86baad51bb367db66fbcbae3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5f5976590cd7aa5c258f0f9e5c12377 = $(`<div id="html_b5f5976590cd7aa5c258f0f9e5c12377" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 562107<br><b>Count:</b> 2<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_474b005f86baad51bb367db66fbcbae3.setContent(html_b5f5976590cd7aa5c258f0f9e5c12377);
+            
+        
+
+        circle_marker_7fdb6e1332afea850c7b8e1b2307a461.bindPopup(popup_474b005f86baad51bb367db66fbcbae3)
+        ;
+
+        
+    
+    
+            circle_marker_7fdb6e1332afea850c7b8e1b2307a461.bindTooltip(
+                `<div>
+                     Pincode: 562107
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6fff1eb58af249d7b4e3446b364138be = L.circleMarker(
+                [12.798875899999999, 77.713516852261],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_ec0521e2915651234e8170ef259e6a3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a113cd19e9afba580aabccdfeda1de16 = $(`<div id="html_a113cd19e9afba580aabccdfeda1de16" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 560081<br><b>Count:</b> 1<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_ec0521e2915651234e8170ef259e6a3b.setContent(html_a113cd19e9afba580aabccdfeda1de16);
+            
+        
+
+        circle_marker_6fff1eb58af249d7b4e3446b364138be.bindPopup(popup_ec0521e2915651234e8170ef259e6a3b)
+        ;
+
+        
+    
+    
+            circle_marker_6fff1eb58af249d7b4e3446b364138be.bindTooltip(
+                `<div>
+                     Pincode: 560081
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_85b0522e2dddea1b8f4026660db8aad1 = L.circleMarker(
+                [22.47192982, 88.35596356],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_c9d48b99b4fb8dbd32b37e720bbd6f3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e08953057cb93fa7db1339129e9c08cb = $(`<div id="html_e08953057cb93fa7db1339129e9c08cb" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 700070<br><b>Count:</b> 1<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_c9d48b99b4fb8dbd32b37e720bbd6f3d.setContent(html_e08953057cb93fa7db1339129e9c08cb);
+            
+        
+
+        circle_marker_85b0522e2dddea1b8f4026660db8aad1.bindPopup(popup_c9d48b99b4fb8dbd32b37e720bbd6f3d)
+        ;
+
+        
+    
+    
+            circle_marker_85b0522e2dddea1b8f4026660db8aad1.bindTooltip(
+                `<div>
+                     Pincode: 700070
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_19c6ecf1d9a07fa121206b16b243b545 = L.circleMarker(
+                [21.89136871111111, 83.38187894444444],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_f3f59ecee158f4027210c2424eb7c8a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3fe873fcab86a5d9ebf41168f14eb72 = $(`<div id="html_d3fe873fcab86a5d9ebf41168f14eb72" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 496001<br><b>Count:</b> 1<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_f3f59ecee158f4027210c2424eb7c8a3.setContent(html_d3fe873fcab86a5d9ebf41168f14eb72);
+            
+        
+
+        circle_marker_19c6ecf1d9a07fa121206b16b243b545.bindPopup(popup_f3f59ecee158f4027210c2424eb7c8a3)
+        ;
+
+        
+    
+    
+            circle_marker_19c6ecf1d9a07fa121206b16b243b545.bindTooltip(
+                `<div>
+                     Pincode: 496001
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc9726c1c121c6f632e41705c4c0f23e = L.circleMarker(
+                [26.112343752631578, 85.39201352631578],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(feature_group_097190486a307b4237c69a067413d638);
+        
+    
+        var popup_7506b565fbc63d1e83f87d37f24e1765 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_268847e1f41db100d6ba3a5eb4be408b = $(`<div id="html_268847e1f41db100d6ba3a5eb4be408b" style="width: 100.0%; height: 100.0%;"><b>Pincode:</b> 842002<br><b>Count:</b> 1<br><b>Cluster:</b> White Field</div>`)[0];
+                popup_7506b565fbc63d1e83f87d37f24e1765.setContent(html_268847e1f41db100d6ba3a5eb4be408b);
+            
+        
+
+        circle_marker_cc9726c1c121c6f632e41705c4c0f23e.bindPopup(popup_7506b565fbc63d1e83f87d37f24e1765)
+        ;
+
+        
+    
+    
+            circle_marker_cc9726c1c121c6f632e41705c4c0f23e.bindTooltip(
+                `<div>
+                     Pincode: 842002
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            feature_group_097190486a307b4237c69a067413d638.addTo(map_1b3f80e30d8680f18147430fdb03ec4e);
+        
+    
+            var layer_control_e211f0ad85422ea0bb9cd56bfa469283_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_22fe717b9dd18b5e5ff3db6dd54c73dc,
+                },
+                overlays :  {
+                    "Divyasree Cluster" : feature_group_418492677c71c8b51016ab0c24c56662,
+                    "Umiya City Cluster" : feature_group_f7706962ffb2ded9f656f223c1002553,
+                    "White Field Cluster" : feature_group_097190486a307b4237c69a067413d638,
+                },
+            };
+            let layer_control_e211f0ad85422ea0bb9cd56bfa469283 = L.control.layers(
+                layer_control_e211f0ad85422ea0bb9cd56bfa469283_layers.base_layers,
+                layer_control_e211f0ad85422ea0bb9cd56bfa469283_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_1b3f80e30d8680f18147430fdb03ec4e);
+
+        
+    
+            tile_layer_22fe717b9dd18b5e5ff3db6dd54c73dc.addTo(map_1b3f80e30d8680f18147430fdb03ec4e);
+        
+    
+                marker_54298ae5f5160f2a7588e0ddb4059afa.setIcon(icon_e09fdc1224456f7ac31932a8881378e5);
+            
+    
+                marker_0814b4f5e90d5cb5ae081e152d09e141.setIcon(icon_b130791afb63826fe2bfa27b40a81d7f);
+            
+    
+                marker_a57300000823ec5029d1ad056717b17f.setIcon(icon_29478777bd7116f5d8bb83228346640e);
+            
+    
+            feature_group_418492677c71c8b51016ab0c24c56662.addTo(map_1b3f80e30d8680f18147430fdb03ec4e);
+        
+    
+            feature_group_f7706962ffb2ded9f656f223c1002553.addTo(map_1b3f80e30d8680f18147430fdb03ec4e);
+        
+    
+            feature_group_097190486a307b4237c69a067413d638.addTo(map_1b3f80e30d8680f18147430fdb03ec4e);
+        
+</script>
+</html>
